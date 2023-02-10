@@ -1,0 +1,370 @@
+@import './global.css';
+@import './noticias.css';
+@import './componentes.css';
+
+/* Header */
+.header-bg{
+  background: linear-gradient(180deg, #C52222 0%, #B00D0D 100%);
+  
+}
+
+.header{
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+
+.header-links{
+  display: flex;
+  gap: 20px;
+}
+
+.header-links a{
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* grid-container */
+.grid-container{
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-template-columns: 1fr, 1fr, minmax(180px, 242px);
+  grid-template: 
+  "noticias noticias anuncio"
+  "noticias noticias anuncio"
+  "newsletter newsletter anuncio";
+}
+
+@media (max-width: 800px){
+  .grid-container{
+    grid-template: 
+  "noticias noticias noticias"
+  "anuncio anuncio anuncio"
+  "newsletter newsletter newsletter";
+  }
+}
+/* noticias */
+
+.noticias{
+  grid-area: noticias;
+  background-color: #ffffff;
+  border-top: 2px solid #FF7474;
+  border-bottom: 2px solid #FF7474;
+}
+
+.noticias-intro{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.noticias-intro img{
+  border-radius: 4px;
+  grid-column: 1;
+}
+
+.noticia-intro-conteudo{
+  grid-column: 2;
+}
+
+.noticias-titulo-1{
+  grid-column: 1 / -1;
+  font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  line-height: 1;
+  margin-bottom: 32px;
+  font-weight: 700;
+  color: #1B1B1B;
+  position: relative;
+}
+
+.noticias-titulo-1::before{
+  content: '';
+  display: block;
+  width: 32px;
+  height: 8px;
+  background-color: #EE4E4d;
+  position: absolute;
+  top: -8px;
+}
+
+.noticias-titulo-2{
+  grid-column: 2;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.noticias-texto{
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #3b3b3b;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.noticias-texto + p{
+  margin-top: 12px;
+}
+
+
+.titulo-destaque{
+  color: #EE4E4E;
+  display: inline;
+}
+
+.noticias-recentes{
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  border-top: 2px solid #FF7474;
+  display: inline-block;
+}
+
+.noticias-recentes h2{
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: bold;
+  color: #1B1B1B;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 8px;
+}
+
+.noticias-recentes h2::before{
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 32px;
+  margin-right: 8px;
+  background-color: #EE4E4d;
+}
+
+.noticias-recentes-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+.noticias-button{
+  border: none;
+  background-color: transparent;
+  padding: 12px 0px;
+  font-family: "Inter", Arial;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #EE4E4E;
+  text-transform: uppercase;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.noticias-button:hover{
+  color: #D63535;
+}
+
+.noticia {
+  background-color: #f9f9f9;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.noticia:hover{
+  background-color: #ffffff;
+}
+
+@media (max-width: 600px){
+  .noticias-intro{
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+  .noticias-intro img{
+    grid-column: 1;
+    
+  }
+  .noticia-intro-conteudo{
+    grid-column: 1;
+   
+  }
+  .noticias-recentes{
+    padding: 40px 20px;
+  }
+
+  .noticias-recentes-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Anuncios */
+.anuncios{
+  grid-area: anuncio;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  border: 4px solid #EEEEEE;
+}
+
+.anuncio{
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.anuncio img{
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.anuncio:hover{
+  background-color: #f7f7f7;
+}
+
+
+.anuncio:first-child{
+  margin-bottom: 32px;
+}
+.anuncio-titulo{
+  font-size: 1rem;
+  font-family: "IBM Plex Mono", Arial, Helvetica, sans-serif;
+  color: #3B3B3B;
+  max-width: 17ch;
+  line-height: 1.5;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.anuncio-tag{
+  display: block;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #2AAD3F;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+@media (max-width: 800px){
+  .anuncios-container{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+  }
+
+  .anuncios{
+    padding: 20px;
+    border: none;
+  }
+
+  .anuncio:first-child{
+    margin-bottom: 0px;
+  }
+ 
+}
+
+.newsletter{
+  grid-area: newsletter;
+  background-color: #ffffff;
+  padding: 60px 20px;
+  border-bottom: 2px solid #FF7474;
+}
+
+
+.newsletter p{
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #747474;
+  margin: 32px 0px;
+}
+
+.newsletter form{
+  display: grid;
+  max-width: 320px;
+}
+
+.newsletter form label, input, button{
+  display: block;
+ 
+}
+
+.newsletter form label{
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #3C3C3C;
+  margin-bottom: 12px;
+}
+
+.newsletter input{
+  background-color: #FFFFFF;
+  padding: 8px;
+  border: 2px solid #F6F6F6; 
+  border-radius: 4px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #747474;
+  margin-bottom: 12px;
+  
+ 
+}
+
+.newsletter input:focus{
+  outline: 2px solid #FF7474;
+  background-color: #f9f9f9;
+}
+
+.newsletter button{
+  font-family: "IBM Plex Mono", Arial, Helvetica, sans-serif;
+  color: #3C0606;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 500;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  background: linear-gradient(180deg, #FF7474 0%, #EE4E4E 100%);
+  transition: .1s;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.newsletter button:hover{
+  background: linear-gradient(180deg, #ff8080 0%, #d64747 100%);
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer-bg{
+  background-color: #3B3B3B;
+}
+
+.footer{
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 60px 20px;
+}
+
+.footer .titulo{
+  color: #fff;
+}
+

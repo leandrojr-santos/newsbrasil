@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsBrasil</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header-bg">
+      <div class="header">
+        <a href="#" class="logo"><img src="./img/logo.svg" alt="NewsBrasil"></a>
+        <nav>
+          <ul class="header-links">
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <div class="grid-container">
+      <aside class="anuncios">
+        <ul class="anuncios-container">
+          <li class="anuncio">
+            <img src="./img/anuncio.jpg" alt="anuncio">
+            <h3 class="anuncio-titulo">PlaySoccer - Faça suas apostas</h3>
+            <span class="anuncio-tag">Anúncio</span>
+          </li>
+          <li class="anuncio">
+            <img src="./img/anuncio2.jpg" alt="anuncio">
+            <h3 class="anuncio-titulo">Tenis Air Max - 499R$</h3>
+            <span class="anuncio-tag">Anúncio</span>
+          </li>
+        </ul>
+      </aside>
+      <section class="noticias" id="noticias">
+        <div class="noticias-intro">
+          <h1 class="noticias-titulo-1">Resultado da nova pesquisa <span class="titulo-destaque">Eleições 2022</span></h1>
+          <img src="./img/pesquisa.jpg" alt="pesquisa">
+          <div class="noticia-intro-conteudo">
+            <h2 class="noticias-titulo-2">Candidato A 53%, Candidato B 47%</h2>
+            <p class="noticias-texto">Conforme nova pesquisa feita no <strong>NewsBrasil</strong> por telefone, o candidato A segue liderando a disputa à presidência.</p>
+            <p class="noticias-texto">No segundo turno as disputas continuam acirradas e com extrema polarização </p>
+          </div>
+        </div>
+        <div class="noticias-recentes">
+          <h2>Notícias recentes</h2>
+          <ul class="noticias-recentes-grid">
+            <li class="noticia">
+              <img src="./img/futebol.jpg" alt="chutando bola">
+              <p class="noticia-desc">Copa 2022, saiba tudo sobre</p>
+              <span>Hoje</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/cachorro.jpg" alt="cachorro">
+              <p class="noticia-desc">Adoção de cachorros
+                em SP</p>
+              <span>Hoje</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/foguete.jpg" alt="foguete">
+              <p class="noticia-desc">Elon Musk construindo foguete</p>
+              <span>1 dia atrás</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/onça.jpg" alt="Onça pintada">
+              <p class="noticia-desc">Onça invade escola no Mato Grosso</p>
+              <span>2 dias atrás</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/mapa.jpg" alt="mapa mundi">
+              <p class="noticia-desc">Pesquisa eleitoral por estados</p>
+              <span>2 dias atrás</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/grafico.jpg" alt="grafico financeiro">
+              <p class="noticia-desc">Taxa selic 13,75% hoje</p>
+              <span>3 dias atrás</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/futebol.jpg" alt="chutando bola">
+              <p class="noticia-desc">Copa 2022, saiba tudo sobre</p>
+              <span>Hoje</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/cachorro.jpg" alt="cachorro">
+              <p class="noticia-desc">Adoção de cachorros
+                em SP</p>
+              <span>Hoje</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/foguete.jpg" alt="foguete">
+              <p class="noticia-desc">Elon Musk construindo foguete</p>
+              <span>1 dia atrás</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/onça.jpg" alt="Onça pintada">
+              <p class="noticia-desc">Onça invade escola no Mato Grosso</p>
+              <span>2 dias atrás</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/mapa.jpg" alt="mapa mundi">
+              <p class="noticia-desc">Pesquisa eleitoral por estados</p>
+              <span>2 dias atrás</span>
+            </li>
+            <li class="noticia">
+              <img src="./img/grafico.jpg" alt="grafico financeiro">
+              <p class="noticia-desc">Taxa selic 13,75% hoje</p>
+              <span>3 dias atrás</span>
+            </li>
+          </ul>
+          <button class="noticias-button" data-btn>Ver mais ▼</button>
+        </div>
+      </section>
+      <section id="newsletter" class="newsletter">
+        <h1 class="titulo">
+          Fique por dentro das novidades
+        </h1>
+        <p>Se inscreva no <strong>Newsletter</strong> para receber notícias pelo email, todo dia temos novidades</p>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="email" for="email" id="email" placeholder="seuemail@mail.com">
+          <button type="submit">Inscreva-se</button>
+      </section>
+    </div>
+
+    <footer class="footer-bg">
+      <div class="footer">
+        <h1 class="titulo">
+          Contato
+        </h1>
+      
+       </div>
+      </div>
+      
+    </footer>
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+</html>

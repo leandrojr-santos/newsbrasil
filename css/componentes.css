@@ -1,0 +1,19 @@
+.titulo{
+  font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  line-height: 1;
+  margin-bottom: 32px;
+  font-weight: 700;
+  color: #1B1B1B;
+  display: flex;
+}
+
+.titulo:before{
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 32px;
+  margin-right: 8px;
+  background-color: #EE4E4d;
+}

@@ -1,0 +1,47 @@
+.noticia{
+  background-color: #F9F9F9;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+  display: none;
+  animation: show-up .2s forwards;
+}
+
+.noticia.ativo{
+  display: grid;
+  animation: show-up .2s forwards;
+}
+
+@keyframes show-up{
+  from{
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.noticia img{
+  border-radius: 4px 4px 0px 0px;
+}
+.noticia-desc{
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 8px;
+}
+
+.noticia span{
+  display: block;
+  font-family: "Inter", arial;
+  font-size: 0.75rem;
+  color: #B00D0D;
+  line-height: 1.25;
+  margin-left: 8px;
+  align-self: end;
+  justify-self: start;
+  margin-left: 8px;
+  margin-bottom: 12px;
+}
+
