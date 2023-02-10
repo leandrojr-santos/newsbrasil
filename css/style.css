@@ -366,5 +366,63 @@
 
 .footer .titulo{
   color: #fff;
+  margin-bottom: 32px;
 }
 
+.footer-info{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.footer-info-item{
+  flex: 1;
+  padding: 0 20px;
+
+}
+
+.footer-info-item + .footer-info-item{
+  border-left: 1px solid #535353;
+}
+
+.footer-info-titulo{
+  color: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.footer-info-desc a{
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #C7C7C7;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.footer-info-desc a:hover{
+  color: #DCDCDC;
+}
+
+.footer-copy{
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  line-height: 1;
+  color: #FFFFFF;
+  margin-top: 120px;
+}
+
+@media (max-width: 800px){
+  .footer-info{
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-info-item{
+    border-left: 1px solid #535353;
+  }
+  .footer-copy{
+    margin-top: 60px;
+  }
+}
