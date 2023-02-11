@@ -19,7 +19,7 @@
         <nav>
           <ul class="header-links">
             <li><a href="#noticias">Noticias</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#newsletter" data-modal="abrir">Newsletter</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
@@ -157,8 +157,19 @@
         <p class="footer-copy">NewsBrasil © Todos os direitos reservados.</p>
        </div>
       </div>
-      
     </footer>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <h1 class="titulo">Newsletter</h1>
+        <form action="">
+          <label for="email-newsletter">Email</label>
+          <input type="email" for="email-newsletter" placeholder="seuemail@mail.com">
+          <button type="submit">Inscreva-se</button>
+        </form>
+      </div>
+    </section class="modal-container">
 
   <script type="module" src="./js/script.js"></script>
 </body>

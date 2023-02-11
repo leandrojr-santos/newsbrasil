@@ -1,6 +1,7 @@
 @import './global.css';
 @import './noticias.css';
 @import './componentes.css';
+@import './modal.css';
 
 /* Header */
 .header-bg{
@@ -301,9 +302,9 @@
 }
 
 .newsletter form label{
-  font-family: IBM Plex Mono;
+  font-family: 'Inter', Arial;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   color: #3C3C3C;
   margin-bottom: 12px;
@@ -349,6 +350,8 @@
   background: linear-gradient(180deg, #ff8080 0%, #d64747 100%);
   cursor: pointer;
 }
+
+
 
 /* footer */
 
