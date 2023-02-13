@@ -1,10 +1,5 @@
 export default function initModal(){
   if(abrirModal && fecharModal && modalContainer && modalSubmit){
-    const abrirModal = document.querySelector('[data-modal="abrir"]');
-    const fecharModal = document.querySelector('[data-modal="fechar"]');
-    const modalContainer = document.querySelector('.modal-container');
-    const modalSubmit = document.querySelector('.modal button[type="submit"]');
-  
     function toggleModal(event){
       event.preventDefault()
       modalContainer.classList.toggle('ativo');
@@ -27,4 +22,8 @@ export default function initModal(){
   }
 }
 
+const abrirModal = document.querySelector('[data-modal="abrir"]');
+const fecharModal = document.querySelector('[data-modal="fechar"]');
+const modalContainer = document.querySelector('.modal-container');
+const modalSubmit = document.querySelector('.modal button[type="submit"]');
 

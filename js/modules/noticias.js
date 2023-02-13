@@ -1,8 +1,8 @@
 export default function initMostrarNoticias(){
   if(btn && noticias && noticiasArray){
     const btn = document.querySelector('[data-btn]'); //botao ver mais
-  const noticias = document.querySelectorAll('.noticia');
-  const noticiasArray = Array.from(noticias);
+   const noticias = document.querySelectorAll('.noticia');
+   const noticiasArray = Array.from(noticias);
   
   const noticiasAtivas = noticiasArray.filter((noticia, index) => {
     return index <= 5;
