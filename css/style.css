@@ -2,32 +2,8 @@
 @import './noticias.css';
 @import './componentes.css';
 @import './modal.css';
+@import './menu-mobile.css';
 
-/* Header */
-.header-bg{
-  background: linear-gradient(180deg, #C52222 0%, #B00D0D 100%);
-  
-}
-
-.header{
-  display: flex;
-  max-width: 1000px;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 30px 20px;
-}
-
-.header-links{
-  display: flex;
-  gap: 20px;
-}
-
-.header-links a{
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  color: white;
-}
 
 /* grid-container */
 .grid-container{
