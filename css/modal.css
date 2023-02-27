@@ -40,6 +40,12 @@
   display: grid;
   
 }
+@media (max-width: 600px){
+  .modal{
+    min-width: 200px;
+    padding: 20px;
+  }
+}
 
 .modal .fechar{
   font-family: "IBM Plex Mono", monospace;

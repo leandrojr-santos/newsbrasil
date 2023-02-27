@@ -9,6 +9,12 @@
   display: flex;
 }
 
+@media(max-width: 600px){
+  .titulo{
+    font-size: 1.75rem;
+  }
+}
+
 .titulo:before{
   content: '';
   display: inline-block;

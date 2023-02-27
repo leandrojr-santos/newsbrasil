@@ -62,6 +62,12 @@
   position: relative;
 }
 
+@media(max-width: 600px){
+  .noticias-titulo-1{
+    font-size: 1.75rem;
+  }
+}
+
 .noticias-titulo-1::before{
   content: '';
   display: block;
@@ -118,6 +124,11 @@
   gap: 8px;
 }
 
+@media(max-width: 600px){
+  .noticias-recentes h2{
+    font-size: 1.75rem;
+  }
+}
 .noticias-recentes h2::before{
   content: '';
   display: inline-block;
@@ -199,6 +210,7 @@
   border-radius: 4px;
   cursor: pointer;
   transition: .3s;
+  
 }
 
 .anuncio img{
