@@ -6,6 +6,11 @@
 
 
 /* grid-container */
+
+html{
+  scroll-behavior: smooth;
+}
+
 .grid-container{
   display: grid;
   max-width: 1000px;
@@ -417,3 +422,38 @@
     margin-top: 60px;
   }
 }
+
+@keyframes show-right {
+  from{
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-left {
+  from{
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[data-anime="scroll"]{
+  opacity: 0;
+  transition: .4s;
+}
+
+[data-anime="scroll"].right{
+  animation: show-right .4s forwards;
+}
+
+[data-anime="scroll"].left{
+  animation: show-left .4s forwards;
+}
+
+
