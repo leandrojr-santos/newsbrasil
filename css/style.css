@@ -206,16 +206,17 @@ html{
   padding: 60px 20px;
   background-color: #ffffff;
   border: 4px solid #EEEEEE;
+  align-items: start;
 }
 
 .anuncio{
+  display: grid;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
   background-color: #ffffff;
   padding: 12px;
   border-radius: 4px;
   cursor: pointer;
   transition: .3s;
-  
 }
 
 .anuncio img{
@@ -247,6 +248,7 @@ html{
   color: #2AAD3F;
   font-size: 0.75rem;
   font-weight: 500;
+  align-self: end;
 }
 
 @media (max-width: 800px){
@@ -258,14 +260,25 @@ html{
   }
 
   .anuncios{
-    padding: 20px;
     border: none;
+    border-bottom: 2px solid #FF7474;
+
   }
 
   .anuncio:first-child{
     margin-bottom: 0px;
   }
  
+ 
+}
+
+@media(max-width: 600px){
+  .anuncio{
+    align-self: stretch;
+    position: relative;
+  }.anuncio-titulo{
+    font-size: 0.875rem;
+  }
 }
 
 .newsletter{

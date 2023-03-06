@@ -13,12 +13,12 @@ if(sections){
       const sectionVisivel = (sectionTop - MetadeTela) < 0;
      
       if(sectionVisivel){
-        if(index % 2 === 0){
-          section.classList.add('right')
-        }else{
+        if(index % 2 === 0){//se for par
+          section.classList.add('right');
+        }else{//se for impar
           section.classList.add('left')
         }
-    
+
       }
     })
   }
